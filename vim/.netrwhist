@@ -1,2 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/wlyeow/Work/nm-netmon/app/View/Themed'
+let g:netrw_dirhist_2='/Users/wlyeow/Work/nm-netmon/app/View/Themed/Simplistic'
+let g:netrw_dirhist_3='/Users/wlyeow/Work/nm-netmon/app/View/Themed/Simplistic/Home'
+let g:netrw_dirhist_4='/Users/wlyeow/Work/nm-netmon/app'
+let g:netrw_dirhist_5='/Users/wlyeow/Work/nm-netmon/app/View'
+let g:netrw_dirhist_6='/Users/wlyeow/Work/nm-netmon/app/View/Themed'
+let g:netrw_dirhist_7='/Users/wlyeow/Work/nm-netmon/app/View/Themed/Simplistic'
+let g:netrw_dirhist_8='/Users/wlyeow/Work/nm-netmon/app/View/Themed/Simplistic/Home'

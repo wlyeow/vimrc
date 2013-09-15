@@ -1,7 +1,7 @@
 " File: .vimrc
 " Author: Wai-Leong YEOW
 " Description: VIM-7.3 personalization.
-" Last Modified: August 25, 2009
+" Last Modified: Sep 15, 2013
 
 " General
 set nocompatible
@@ -47,14 +47,8 @@ set tags=./tags,tags;
 set spell spelllang=en_us
 set nospell
 
-" Mini Buffer Explorer
-let g:miniBufExplMapWindowNavArrows = 1
-let g:miniBufExplMapCTabSwitchBufs = 1 
 
 " Key maps
-
-" Tag List
-map <C-G> :TlistToggle<CR>
 
 " window resize --- somehow doesn't work quite well
 nmap <M-Up> <C-w>+
@@ -77,6 +71,11 @@ map <F6> <Esc>:cp<CR>
 map <F7> <Esc>:cn<CR>
 map <F8> <Esc>:clist<CR>
 
+" Trinity plugin
+"nmap <C-;> :TrinityToggleTagList<CR>
+"nmap <C-'> :TrinityToggleNERDTree<CR>
+"nmap <C-/> :TrinityToggleSourceExplorer<CR>
+nmap <F10> :TrinityToggleAll<CR>
 
 " Auto commands
 
@@ -94,3 +93,11 @@ function Wrap_Text()
 	vnoremap <buffer> <Home> g^
 	vnoremap <buffer> <End> g$
 endfunction
+
+" uninstalled
+" Mini Buffer Explorer (uninstalled)
+"let g:miniBufExplMapWindowNavArrows = 1
+"let g:miniBufExplMapCTabSwitchBufs = 1 
+" Tag List (uninstalled)
+"map <C-G> :TlistToggle<CR>
+
