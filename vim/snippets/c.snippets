@@ -30,7 +30,7 @@ snippet #if
 # (the randomizer code is taken directly from TextMate; it could probably be
 # cleaner, I don't know how to do it in vim script)
 snippet once
-	#ifndef ${1:__`toupper(Filename('', 'UNTITLED').'_'.system("/usr/bin/ruby -e 'print (rand * 2821109907455).round.to_s(36)'"))`}
+	#ifndef ${1:__`toupper(Filename('', 'UNTITLED').'_'.system("/bin/bash -c '/usr/bin/tr -cd \"A-Z0-9\" < /dev/urandom | /usr/bin/fold -w 8 | /usr/bin/head -n 1'"))`}
 
 	#define $1
 
@@ -108,3 +108,7 @@ snippet .
 	[${1}]${2}
 snippet un
 	unsigned
+
+
+#	#ifndef ${1:__`toupper(Filename('', 'UNTITLED').'_'.system("/bin/bash -c 'printf \"%X%X\" $RANDOM $RANDOM'"))`}
+#	#ifndef ${1:__`toupper(Filename('', 'UNTITLED').'_'.system("/usr/bin/ruby -e 'print (rand * 2821109907455).round.to_s(36)'"))`}
