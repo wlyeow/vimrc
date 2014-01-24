@@ -108,7 +108,23 @@ snippet .
 	[${1}]${2}
 snippet un
 	unsigned
-
+snippet doc
+	/*
+	 * \file	${1:`expand('%:t')`}
+	 * \ingroup	${2}
+	 * \author	${3:`g:snips_author`}
+	 * \date	${4:`strftime('%Y-%m-%d')`}
+	 *
+	 * Created on ${5:`strftime('%a, %d %b %Y %H:%M:%S %z')`}
+	 */
+snippet docf
+	/**
+	 * \brief	${1}
+	 *
+	 * \param	${2}
+	 *
+	 * \retval	${3}
+	 */
 
 #	#ifndef ${1:__`toupper(Filename('', 'UNTITLED').'_'.system("/bin/bash -c 'printf \"%X%X\" $RANDOM $RANDOM'"))`}
 #	#ifndef ${1:__`toupper(Filename('', 'UNTITLED').'_'.system("/usr/bin/ruby -e 'print (rand * 2821109907455).round.to_s(36)'"))`}
