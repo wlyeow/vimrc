@@ -1,0 +1,13 @@
+plugin/cake.vim
+plugin/
+doc/cake.txt
+doc/
+autoload/unite/sources/cake.vim
+autoload/unite/sources/
+autoload/unite/
+autoload/cake/util.vim
+autoload/cake/cake20.vim
+autoload/cake/cake13.vim
+autoload/cake/
+autoload/cake.vim
+autoload/
