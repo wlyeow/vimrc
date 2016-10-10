@@ -2,7 +2,29 @@ if exists("b:current_syntax")
 	finish
 endif
 
-syn match	logDate		'\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d[+-]\d\d\d\d'
+" event date-time
+syn match	logDate		'\v<\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d(\.\d{3})=[+-]\d\d:=\d\d>'
+syn match	logDate		'\v<(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s\d\d=\s\d\d=:\d\d:\d\d>'
+
+" time
+syn match	logTime		'\v<\d\d:\d\d:\d\d>'
+
+" log levels
+syn keyword	logLevel	EMERG
+syn keyword	logLevel	PANIC
+syn keyword	logLevel	ALERT
+syn keyword	logLevel	CRIT
+syn keyword	logLevel	ERR
+syn keyword	logLevel	ERROR
+syn keyword	logLevel	WARN
+syn keyword	logLevel	WARNING
+syn keyword	logLevel	NOTICE
+syn keyword	logLevel	INFO
+syn keyword	logLevel	DEBUG
+syn match       LogLevel        '\v\<(kern|user|mail|daemon|auth|syslog|lpr|news|uucp|cron|security|ftp|ntp|logaudit|logalert|clock|local[0-7])\.(emerg|alert|crit|err(or)=|warn(ing)=|notice|info|debug)\>'
+
+
+" event names
 syn keyword	logEvent	SYSTEM_AD_DELIVERED_UNACKED_MSGS_EXCEED
 syn keyword	logEvent	SYSTEM_AD_DELIVERED_UNACKED_MSGS_HIGH
 syn keyword	logEvent	SYSTEM_AD_DELIVERED_UNACKED_MSGS_HIGH_CLEAR
@@ -324,8 +346,27 @@ syn keyword	logEvent	CLIENT_CLIENT_UNSUBSCRIBE
 syn keyword	logEvent	CLIENT_CLIENT_XA_TRANSACTED_SESSION_CLOSE
 syn keyword	logEvent	CLIENT_CLIENT_XA_TRANSACTED_SESSION_OPEN
 
+" who
+"syn match	logWho		'[.\w]+\s+\w+'
+"syn match	logWho		'\w+'
+"syn match	logWhere
+syn match	logProto	'CfgSync/\d'
+syn match	logProto	'CLI/\d'
+syn match	logProto	'SEMP/mgmt'
+syn match	logProto	'SHELL'
+
+" syn keyword	logSrc		logProto nextgroup=logWho skipwhite
+
+" filename
+syn match	logFilename	'\v<\h\w*\.\w+:\d+>'
+
 hi def link logDate		Number
+hi def link logTime		Number
 hi def link logEvent		Type
+" hi def link logSrc		PreProc
+hi def link logProto		Type
+hi def link logLevel		Error
+hi def link logFilename		String
 
 let b:current_syntax = "solLog"
 
