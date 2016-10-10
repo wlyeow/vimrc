@@ -69,8 +69,8 @@ nmap <M-Right> <C-w>>
 nmap <M-Left> <C-w><
 
 " buffer --- switch between opened files
-"nmap <C-Tab> :bn<CR>
-"nmap <C-S-Tab> :bp<CR>
+nmap <C-Tab> :bn<CR>
+nmap <C-S-Tab> :bp<CR>
 nmap <C-Q> :bd<CR>
 
 " save --- F2
