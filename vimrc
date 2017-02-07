@@ -90,6 +90,7 @@ map <F8> <Esc>:clist<CR>
 nmap <F10> :TrinityToggleAll<CR>
 
 " Auto commands
+autocmd BufNewFile,BufReadPost {command,event,system,debug}.log* set syntax=solLog
 
 " Functions
 
