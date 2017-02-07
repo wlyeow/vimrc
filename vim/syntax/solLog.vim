@@ -359,7 +359,7 @@ syn match	logProto	'SHELL'
 " syn keyword	logSrc		logProto nextgroup=logWho skipwhite
 
 " filename
-syn match	logFilename	'\v<\h\w*\.\w+:\d+>'
+syn match	logFilename	'\v<\h[-a-zA-Z_]*\.\w+:\d+>'
 
 hi def link logDate		Number
 hi def link logTime		Number
