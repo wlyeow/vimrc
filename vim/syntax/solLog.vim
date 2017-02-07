@@ -4,10 +4,11 @@ endif
 
 " event date-time
 syn match	logDate		'\v<\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d(\.\d{3})=[+-]\d\d:=\d\d>'
-syn match	logDate		'\v<(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s\d\d=\s\d\d=:\d\d:\d\d>'
+syn match	logDate		'\v<\d{4}-\d\d-\d\d\s\d\d:\d\d:\d\d([.,]\d{3})=([+-]\d\d:=\d\d)=>'
+syn match	logDate		'\v<((Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s)=(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s\d\d=\s\d\d=:\d\d:\d\d(\.\d{3})=(\s\d{4})=>'
 
 " time
-syn match	logTime		'\v<\d\d:\d\d:\d\d>'
+syn match	logTime		'\v<\d\d:\d\d:\d\d([.,]\d{3,4})>'
 
 " log levels
 syn keyword	logLevel	EMERG
