@@ -30,7 +30,7 @@ snippet #if
 # (the randomizer code is taken directly from TextMate; it could probably be
 # cleaner, I don't know how to do it in vim script)
 snippet once
-	#ifndef ${1:__`toupper(Filename('', 'UNTITLED').'_'.system("/bin/bash -c '/usr/bin/tr -cd \"A-Z0-9\" < /dev/urandom | /usr/bin/fold -w 8 | /usr/bin/head -n 1'"))`}
+	#ifndef ${1:__`toupper(Filename('', 'UNTITLED'))`}
 
 	#define $1
 
