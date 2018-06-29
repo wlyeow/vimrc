@@ -138,8 +138,12 @@ syn keyword	logEvent	SYSTEM_CLIENT_SUBSCRIPTIONS_MEMORY_HIGH_CLEAR
 syn keyword	logEvent	SYSTEM_DNS_NAME_SERVER_DOWN
 syn keyword	logEvent	SYSTEM_DNS_NAME_SERVER_UP
 syn keyword	logEvent	SYSTEM_HA_DISK_PATH_CHG
+syn keyword	logEvent	SYSTEM_HA_REDUN_GROUP_NODE_JOINED
+syn keyword	logEvent	SYSTEM_HA_REDUN_GROUP_NODE_LEFT
 syn keyword	logEvent	SYSTEM_HA_REDUN_STATE_DOWN
 syn keyword	logEvent	SYSTEM_HA_REDUN_STATE_UP
+syn keyword	logEvent	SYSTEM_HA_TIME_SKEW
+syn keyword	logEvent	SYSTEM_HA_TIME_SKEW_CLEARED
 syn keyword	logEvent	SYSTEM_HA_VRRP_STATE_DOWN
 syn keyword	logEvent	SYSTEM_HA_VRRP_STATE_UP
 syn keyword	logEvent	SYSTEM_LINK_ADB_HELLO_PROTOCOL_DOWN
@@ -150,6 +154,7 @@ syn keyword	logEvent	SYSTEM_LINK_ETH_LINK_DOWN
 syn keyword	logEvent	SYSTEM_LINK_ETH_LINK_UP
 syn keyword	logEvent	SYSTEM_LINK_HBA_LINK_DOWN
 syn keyword	logEvent	SYSTEM_LINK_HBA_LINK_UP
+syn keyword	logEvent	SYSTEM_LINK_IP_ADDRESS_CHANGED
 syn keyword	logEvent	SYSTEM_LINK_LAG_ADD_LINK
 syn keyword	logEvent	SYSTEM_LINK_LAG_DOWN
 syn keyword	logEvent	SYSTEM_LINK_LAG_REMOVE_LINK
@@ -166,6 +171,8 @@ syn keyword	logEvent	SYSTEM_NAB_NONCRITICAL_HARDWARE_NOTIFICATION
 syn keyword	logEvent	SYSTEM_NAB_NONCRITICAL_HARDWARE_SOFT_FAILURE
 syn keyword	logEvent	SYSTEM_NAB_ZIP_ENGINE_RESTART_COMPLETE
 syn keyword	logEvent	SYSTEM_NAB_ZIP_ENGINE_RESTART_INITIATED
+syn keyword	logEvent	SYSTEM_NTP_SERVER_DOWN
+syn keyword	logEvent	SYSTEM_NTP_SERVER_UP
 syn keyword	logEvent	SYSTEM_ROUTING_CSPF_CONN_DOWN
 syn keyword	logEvent	SYSTEM_ROUTING_CSPF_CONN_UP
 syn keyword	logEvent	SYSTEM_ROUTING_CSPF_DUPLICATE_ROUTER_NAME
@@ -215,6 +222,7 @@ syn keyword	logEvent	VPN_AD_TRANSACTIONS_EXCEED
 syn keyword	logEvent	VPN_AD_TRANSACTIONS_HIGH
 syn keyword	logEvent	VPN_AD_TRANSACTIONS_HIGH_CLEAR
 syn keyword	logEvent	VPN_AD_XA_TRANSACTION_FAIL
+syn keyword	logEvent	VPN_BRIDGING_BRIDGE_STALLED
 syn keyword	logEvent	VPN_BRIDGING_LINK_CONFIG_MISMATCH
 syn keyword	logEvent	VPN_BRIDGING_LINK_DOWN
 syn keyword	logEvent	VPN_BRIDGING_LINK_REJECTED
