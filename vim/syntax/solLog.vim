@@ -3,8 +3,7 @@ if exists("b:current_syntax")
 endif
 
 " event date-time
-syn match	logDate		'\v<\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d(\.\d{3})=[+-]\d\d:=\d\d>'
-syn match	logDate		'\v<\d{4}-\d\d-\d\d\s\d\d:\d\d:\d\d([.,]\d{3})=([+-]\d\d:=\d\d)=>'
+syn match	logDate		'\v<\d{4}-\d\d-\d\d(T|\s)\d\d:\d\d:\d\d([.,]\d{3})=([+-]\d\d:=\d\d)=>'
 syn match	logDate		'\v<((Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s)=(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s\d\d=\s\d\d=:\d\d:\d\d(\.\d{3})=(\s\d{4})=>'
 
 " time
